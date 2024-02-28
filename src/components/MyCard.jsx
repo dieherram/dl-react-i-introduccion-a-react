@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Tags from './Tags';
 
-function MyCard({ imgSrc, name, description, text, color }) {
+const MyCard = ({ imgSrc, name, description, text, color }) => {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={imgSrc} />

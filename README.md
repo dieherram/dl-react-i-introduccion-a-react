@@ -29,7 +29,10 @@ El objetivo de este desafío era crear una aplicación web utilizando React que 
 
 ## Solución a Requerimientos 😉
 
-1. **Creación del Componente Header.jsx:**
+1. **Creación de la Aplicación de React utilizando Vite:**
+- npm create vite@latest
+
+2. **Creación del Componente Header.jsx:**
 ```javascript
 const Header = ({ titleText }) => {
   return (
@@ -42,12 +45,12 @@ const Header = ({ titleText }) => {
 export default Header;
 ```
 
-2. **Creación del Componente MyCard.jsx:**
+3. **Creación del Componente MyCard.jsx:**
 ```javascript
 import Card from 'react-bootstrap/Card';
 import Tags from './Tags';
 
-function MyCard({ imgSrc, name, description, text, color }) {
+const MyCard = ({ imgSrc, name, description, text, color }) => {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={imgSrc} />
@@ -65,7 +68,7 @@ function MyCard({ imgSrc, name, description, text, color }) {
 export default MyCard;
 ```
 
-3. **Creación del Componente Tags.jsx:**
+4. **Creación del Componente Tags.jsx:**
 ```javascript
 import Badge from 'react-bootstrap/Badge';
 
@@ -80,7 +83,7 @@ const Tags = ({ colorBadge, textBadge }) => {
 export default Tags;
 ```
 
-4. **Generación del Componente Footer.jsx:**
+5. **Generación del Componente Footer.jsx:**
 ```javascript
 const Footer = ({ text }) => {
   return (
@@ -93,7 +96,7 @@ const Footer = ({ text }) => {
 export default Footer;
 ```
 
-5. **Importación de Componentes en App.jsx:**
+6. **Importación de Componentes en App.jsx:**
 ```javascript
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
