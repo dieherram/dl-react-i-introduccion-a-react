@@ -1,0 +1,46 @@
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+main .card {
+  padding: .5em;
+  width: 8em;
+}
+
+main .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main .card .card-title {
+  font-weight: 600;
+}
+
+main .card .card-img-top {
+  max-height: 20em;
+  width: auto;
+}
+
+main .card .badge-container {
+  display: flex;
+  justify-content: center;
+}
+
+main .card .badge {
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0 6em;
+}
+
+
+@media (max-width: 576px) {
+  footer p {
+    padding: 0;
+  }
+}
